@@ -1,5 +1,5 @@
 ## Easy Platformer
-A one-level pl
+A one-level platforming game where you have to get to the goal!
 
 Summary
 A paragraph or two describing what you built for your final project.
