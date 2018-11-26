@@ -7,4 +7,6 @@ For the project, I used p5 to construct a platforming game. Using shapes and key
 
 ## Component Parts
 
-Since my project involves p5, I used the p5 reference to create my code. 2D primitives such as rect() and ellipse() were used for the level platforms and playable character respectively. Multiple rectangles were rendered at multiple points on-screen, and will blend together with p5 attributes. The character will be written to stay on the ground at all times, and will be controlled with keypressed(). When the character reaches the goal, a sound will play using function preload() and loadSound().
+Since my project involves p5, I used the p5 reference to create my code. 2D primitives such as rect() and ellipse() were used for the level platforms and playable character respectively. Multiple rectangles were rendered at multiple points on-screen, and will blend together with p5 attributes. The character will be written to stay on the ground at all times, and will be controlled with keypressed(). When the character reaches the goal, a sound will play using function preload() and loadSound(). 
+
+## Project diagram is included in repository
