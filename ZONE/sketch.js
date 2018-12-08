@@ -163,7 +163,7 @@ function draw() {
   }
 
   if (inGoal) {
-    background(0, 128, 0);
+    background(0, 200, 0);
   } else if (alive) {
     background(100);
   } else {
