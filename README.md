@@ -1,9 +1,9 @@
-## Easy Platformer
-A one-level platforming game where you have to get to the goal!
+## ZONE
+A difficult maze game where you have to get to the goal!
 
 ## Summary
 
-For the project, I used p5 to construct a platforming game. Using shapes and key commands, I rendered an entire level with rectangles and squares. The character moves left and right with the "A" and "D" keys. The goal is all the way at the bottom, and plays a congratulatory sound when reached.
+For the project, I used p5 to construct a mouse-controlled maze game. Using shapes and mouse commands, I rendered an entire level with rectangles and squares. The character moves in all directions with the mouse. When the mouse cursor hits a wall, the screen turns red and plays a beeping noise. When the player reaches the goal, a green square at the top right of the maze, the screen turns green and a ringing noise plays.
 
 ## Component Parts
 
