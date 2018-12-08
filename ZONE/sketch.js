@@ -1,6 +1,17 @@
+// wrongquiet.mp3 was found at https://freesound.org/people/SgtPepperArc360/sounds/341732/
+// fin.mp3 was found at https://freesound.org/people/Daenn/sounds/159158/
+
+var wrong;
+var fin;
 var playerX = 100;
 var playerY = 100;
 var alive = false;
+
+function preload() {
+  soundFormats('mp3', 'ogg');
+  wrong = loadSound('assets/wrongquiet.mp3');
+  fin = loadSound('assets/finquiet.mp3')
+}
 
 goal = {
   x: 620,
@@ -139,8 +150,8 @@ function draw() {
   var playerY = mouseY;
 
   for (i = 0; i < walls.length; i++) {
-    if ((walls[i].x - 12 <= playerX) && (playerX - 12 <= walls[i].x + walls[i].w) &&
-      (walls[i].y - 12 <= playerY) && (playerY - 12 <= walls[i].y + walls[i].h)) {
+    if ((walls[i].x - 14 <= playerX) && (playerX - 14 <= walls[i].x + walls[i].w) &&
+      (walls[i].y - 14 <= playerY) && (playerY - 14 <= walls[i].y + walls[i].h)) {
       alive = false;
     }
   }
@@ -148,6 +159,7 @@ function draw() {
   if ((goal.x <= playerX) && (playerX <= goal.x + goal.w) &&
     (goal.y <= playerY) && (playerY <= goal.y + goal.h)) {
     inGoal = true;
+    fin.play();
   }
 
   if (inGoal) {
@@ -156,6 +168,7 @@ function draw() {
     background(100);
   } else {
     background(255, 0, 0);
+    wrong.play();
   }
 
   for (i = 0; i < walls.length; i++) {
@@ -166,5 +179,5 @@ function draw() {
   rect(goal.x, goal.y, goal.w, goal.h);
 
   fill(255, 255, 255);
-  ellipse(mouseX, mouseY, 25);
+  ellipse(mouseX, mouseY, 29);
 }
