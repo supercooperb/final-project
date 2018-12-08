@@ -20,8 +20,11 @@ I had many challenges going into this project. I am experienced with rendering p
 ## Timeline
 
 Week 1: Write proposal
+
 Week 2: Render walls, cursor, and goal
+
 Week 3: Give walls, cursor, and goal specific variables
+
 Week 4: Present!
 
 ## Video of completed work is in repository
@@ -29,13 +32,21 @@ Week 4: Present!
 ## References and links
 
 P5 Reference sections I used
+
 https://p5js.org/reference/#/p5/ellipse
+
 https://p5js.org/reference/#/p5/rect
+
 https://p5js.org/reference/#/p5/background
+
 https://p5js.org/reference/#/p5/mouseX
+
 https://p5js.org/reference/#/p5/mouseX
+
 https://p5js.org/reference/#/p5.SoundFile
 
 A game that inspired this project was World's Hardest Game
+
 https://www.coolmathgames.com/0-worlds-hardest-game
+
 https://www.youtube.com/watch?v=bhqkxwJWR0w
