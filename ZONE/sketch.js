@@ -1,5 +1,5 @@
 // wrongquiet.mp3 was found at https://freesound.org/people/SgtPepperArc360/sounds/341732/
-// fin.mp3 was found at https://freesound.org/people/Daenn/sounds/159158/
+// finquiet.mp3 was found at https://freesound.org/people/Daenn/sounds/159158/
 
 var wrong;
 var fin;
