@@ -1,17 +1,23 @@
 // wrongquiet.mp3 was found at https://freesound.org/people/SgtPepperArc360/sounds/341732/
 // finquiet.mp3 was found at https://freesound.org/people/Daenn/sounds/159158/
 
+// set variables
+
 var wrong;
 var fin;
 var playerX = 100;
 var playerY = 100;
 var alive = false;
 
+// sounds
+
 function preload() {
   soundFormats('mp3', 'ogg');
   wrong = loadSound('assets/wrongquiet.mp3');
   fin = loadSound('assets/finquiet.mp3')
 }
+
+// objects
 
 goal = {
   x: 620,
@@ -136,6 +142,8 @@ walls = [{
   },
 ];
 
+// width and height of project
+
 function setup() {
   createCanvas(700, 700);
   noStroke();
@@ -143,6 +151,8 @@ function setup() {
 
 function draw() {
   fill(255, 255, 255);
+
+// array functions
 
   var alive = true;
   var inGoal = false;
@@ -156,11 +166,15 @@ function draw() {
     }
   }
 
+// what happens if you reach the goal?
+
   if ((goal.x <= playerX) && (playerX <= goal.x + goal.w) &&
     (goal.y <= playerY) && (playerY <= goal.y + goal.h)) {
     inGoal = true;
     fin.play();
   }
+
+// what happens when you hit a wall?
 
   if (inGoal) {
     background(0, 200, 0);
@@ -177,6 +191,8 @@ function draw() {
 
   fill(0, 255, 0);
   rect(goal.x, goal.y, goal.w, goal.h);
+
+// controllable cursor
 
   fill(255, 255, 255);
   ellipse(mouseX, mouseY, 29);
